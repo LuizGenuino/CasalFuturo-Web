@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "tailwindcss-primeui";
+
+:root {
+    /* 🎨 Cores principais */
+    --primary-color: #EB0021;
+    --primary-color-text: #FFFFFF;
+
+    /* Fundo geral e cartões */
+    --surface-ground: #FFF5F6;
+    --surface-card: #FFFFFF;
+
+    /* Texto */
+    --text-color: #730A00;
+    --text-color-secondary: #FF4156;
+
+    /* Bordas e sombras */
+    --surface-border: #FFCDD2;
+    --shadow-color: #000000;
+
+    /* Estados */
+    --highlight-bg: #EB0021;
+    --highlight-text-color: #FFFFFF;
+
+    /* Botões */
+    --button-bg: var(--primary-color);
+    --button-text-color: var(--primary-color-text);
+    --button-hover-bg: #ff3344; /* Vermelho mais claro no hover */
+    --button-hover-text-color: #FFFFFF;
+
+    /* Inputs */
+    --input-bg: #FFFFFF;
+    --input-text-color: var(--text-color);
+    --input-border: var(--surface-border);
+    --input-focus-border: var(--primary-color);
+    --input-focus-shadow: 0 0 0 0.2rem rgba(235, 0, 33, 0.25);
+
+    /* Tabelas */
+    --table-header-bg: var(--primary-color);
+    --table-header-text-color: var(--primary-color-text);
+    --table-row-hover-bg: #ffe6e9;
+}
+
+/* Ajuste para botões PrimeVue */
+.p-button {
+    background: var(--button-bg) !important;
+    color: var(--button-text-color) !important;
+    border: none !important;
+}
+.p-button:hover {
+    background: var(--button-hover-bg) !important;
+    color: var(--button-hover-text-color) !important;
+}
+
+/* Ajuste para inputs PrimeVue */
+.p-inputtext, .p-dropdown, .p-multiselect, .p-calendar {
+    background: var(--input-bg) !important;
+    color: var(--input-text-color) !important;
+    border: 1px solid var(--input-border) !important;
+}
+.p-inputtext:focus, .p-dropdown:focus, .p-multiselect:focus, .p-calendar:focus {
+    border-color: var(--input-focus-border) !important;
+    box-shadow: var(--input-focus-shadow) !important;
+}
+
+/* Ajuste para tabelas PrimeVue */
+.p-datatable thead th {
+    background: var(--table-header-bg) !important;
+    color: var(--table-header-text-color) !important;
+}
+.p-datatable tbody tr:hover {
+    background: var(--table-row-hover-bg) !important;
+}

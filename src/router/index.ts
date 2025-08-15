@@ -1,4 +1,5 @@
 import CadastroPage from '@/views/Cadastro/CadastroPage.vue'
+import HomePage from '@/views/Home/HomePage.vue'
 import LoginPage from '@/views/Login/LoginPage.vue'
 import VerificaEmailPage from '@/views/VerificaEmail/VerificaEmailPage.vue'
 import { createRouter, createWebHistory } from 'vue-router'
@@ -18,6 +19,12 @@ const routes = [
         path: '/verifica-email',
         name: "VerificaEmail",
         component: VerificaEmailPage
+    },
+
+     {
+        path: '/',
+        name: "Home",
+        component: HomePage
     },
 ]
 
